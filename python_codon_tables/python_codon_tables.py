@@ -26,7 +26,8 @@ available_codon_tables_shortnames = {
 def csv_string_to_codons_dict(csv_string):
     """Transform a CSV string of a codon table to a dict."""
     result = {}
-    for line in csv_string.split("\n")[1:]:
+    csv_stripped = csv_string.rstrip()
+    for line in csv_stripped.split("\n")[1:]:
         aa, codon, freq = line.split(",")
         if aa not in result:
             result[aa] = {}
