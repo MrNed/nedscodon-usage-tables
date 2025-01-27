@@ -4,6 +4,9 @@ import os
 import python_codon_tables as pct
 
 
+mock_table_path = os.path.join("tests", "data", "table_newline.csv")
+
+
 def test_basics():
 
     # LOAD ONE TABLE BY NAME
@@ -65,3 +68,8 @@ def test_replace_U_by_T():
     table = pct.get_codons_table("b_subtilis_1423", replace_U_by_T=False)
     assert table["*"]["UAA"] == 0.61
 
+
+def test_csv_string_to_codons_dict():
+    with open(mock_table_path, "r") as f:
+        codon_dict = pct.csv_string_to_codons_dict(f.read())
+    assert type(codon_dict) == dict

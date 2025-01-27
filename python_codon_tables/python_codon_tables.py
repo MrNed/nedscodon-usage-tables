@@ -63,7 +63,7 @@ def get_codons_table(table_name, replace_U_by_T=True, web_timeout=5):
 
     Returns a dict {"*": {'TAA': 0.64...}, 'K': {'AAA': 0.76...}, ...}
 
-    
+
     """
     if replace_U_by_T:
         table = get_codons_table(table_name, replace_U_by_T=False, web_timeout=5)
