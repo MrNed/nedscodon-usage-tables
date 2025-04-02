@@ -1,20 +1,5 @@
 import os
 
-try:
-    from setuptools import setup
-except ImportError:
-    try:
-        from .python.ez_setup import use_setuptools
-
-        use_setuptools()
-    except ImportError:
-        raise ImportError(
-            "python_codon_tables could not be installed, "
-            "probably because neither setuptools nor ez_setup "
-            "are installed on this computer. \nInstall ez_setup "
-            "([sudo] pip install ez_setup) and try again."
-        )
-
 from setuptools import setup, find_packages
 
 with open(os.path.join("codon_usage_data", "version.txt"), "r") as f:
