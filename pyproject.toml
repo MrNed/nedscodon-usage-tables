@@ -1,6 +1,6 @@
 [project]
 name = "python_codon_tables"
-version = "0.1.14"
+version = "0.1.15"
 license = "CC0-1.0"
 authors = [{ name = "Zulko" }]
 description = "Codon Usage Tables for Python, from kazusa.or.jp"
