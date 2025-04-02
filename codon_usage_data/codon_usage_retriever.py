@@ -22,6 +22,7 @@ import sys
 import os
 from python_codon_tables import download_codons_table
 
+
 def download_all_tables():
     with open("organisms.csv", "r") as f:
         for line in f.readlines()[1:]:
@@ -30,8 +31,9 @@ def download_all_tables():
             target = os.path.join("tables", "%s_%s.csv" % (organism, taxid))
             download_codons_table(taxid=taxid, target_file=target)
 
+
 if __name__ == "__main__":
-    print (" ".join(sys.argv))
+    print(" ".join(sys.argv))
     if sys.argv[1] == "all":
         download_all_tables()
     else:
