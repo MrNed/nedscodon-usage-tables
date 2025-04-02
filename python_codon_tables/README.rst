@@ -5,7 +5,7 @@ Python Codon Tables
     :target: https://github.com/Edinburgh-Genome-Foundry/codon-usage-tables/actions/workflows/build.yml
     :alt: GitHub CI build status
 
-Provides codon usage tables as dictionnaries, for Python 3+.
+Provides codon usage tables as dictionaries, for Python 3+.
 
 Tables for the following organisms are provided with the library (any other
 table can be downloaded using a TaxID):
@@ -76,10 +76,10 @@ Manual:
 
 .. code:: bash
 
-    (sudo) python setup.py install
+    python setup.py install
 
 More biology software
------------------------
+---------------------
 
 .. image:: https://raw.githubusercontent.com/Edinburgh-Genome-Foundry/Edinburgh-Genome-Foundry.github.io/master/static/imgs/logos/egf-codon-horizontal.png
   :target: https://edinburgh-genome-foundry.github.io/
